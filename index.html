@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- Set the page title -->
-    <title>Group Projectaa</title>
+    <title>Ping Pong Game</title>
 
     <!-- Set the charset we're using to UTF-8 -->
     <meta charset="UTF-8" />
@@ -22,19 +22,36 @@
     <!-- Set the Favicon  -->
     <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
   </head>
-  <body>
-    <!--
-
-      ADD YOUR GROUP PROJECT CODE
-
-      YOU MAY REMOVE THE BOILERPLATE CODE BELOW
-
-    -->
-    <main>
-      <div id="app"></div>
-    </main>
-
-    <!-- This is where we add our awesome JavaScript code -->
-    <script src="./script.js"></script>
-  </body>
+<body>
+  <div class="header">
+    <h1>Ping Pong Game nosjsaw</h1>
+  <div class="container">
+    <canvas id="canvas" width="600" height="400"></canvas>
+  </div>
+  <div class="button">
+    <button id="start-btn" class="btn">Start</button>
+      <button id="pause-btn" class="btn">Pause</button>
+      <button id="restart-btn" class="btn">Restart</button>
+    </div>
+   <p class="control">Control: Player Left(W and S) vs. CPU </p>
+    <!-- Add a modal element with an ID -->
+  <div class="modal" tabindex="-1" role="dialog" id="message-modal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h5 id="message"></h5>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="message-modal-close" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="script.js"></script>
+</body>
+<footer>
+  <p>Created by: CodeCrafters™</p>
+  <p class="copy">&copy; 2023</p>
+      <p class="friendly">Mobile, laptop and computer friendly!</p>
+    </footer>
 </html>
