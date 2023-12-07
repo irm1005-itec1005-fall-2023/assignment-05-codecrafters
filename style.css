@@ -8,13 +8,22 @@ body {
   text-align: left;
   margin: 0;
   padding: 0;
+  background-color: aqua;
   box-sizing: border-box;
+  
+}
+html {
+  box-sizing: border-box;
+  background-color: rgb(128, 0, 255);
 }
 
-p{
+body p{
   margin: 0;
   padding: 2.2rem;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 1.2rem;
+  color: blue;
 }
 h1{
     font-size: 3rem;
@@ -25,18 +34,27 @@ h1{
     font-family:monospace
 }
 
+canvas {
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+}
 
 footer {
   display:flex;
   justify-content: space-between;
   align-items: center;
-  background-color: aquamarine;
+  background-color:  rgb(128, 0, 255);
 
 }
 
 footer p{
  margin:0;
   font-size: 0.85rem;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  color: white;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
