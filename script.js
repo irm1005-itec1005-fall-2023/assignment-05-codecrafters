@@ -359,12 +359,33 @@ var DIRECTION = {
     }
   };
   
+  var backgroundSound = document.getElementById('backgroundSound');
+var muteButton = document.getElementById('muteButton');
+
+function playBackgroundSound() {
+  backgroundSound.play();
+}
+
+function pauseBackgroundSound() {
+  backgroundSound.pause();
+}
+
+function stopBackgroundSound() {
+  backgroundSound.pause();
+  backgroundSound.currentTime = 0;
+}
+
+function toggleMute() {
+  backgroundSound.muted = !backgroundSound.muted;
+}
+muteButton.addEventListener('click', toggleMute);
+
   var Pong = Object.assign({}, Game);
   Pong.initialize();
   
     // Init complete
     console.log("App successfully initialised");
-    playBackgroundSound();
+  
 
   
   //
