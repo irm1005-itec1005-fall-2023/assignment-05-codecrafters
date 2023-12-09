@@ -44,7 +44,6 @@ footer {
   justify-content: space-between;
   align-items: center;
   background-color: #377771;
-  /*make it stick to the bottom*/
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -76,5 +75,6 @@ footer p{
 @media (min-width: 1024px) {
   #app {
     max-width: 60%;
+    font-size: 1.2rem;
   }
 }
