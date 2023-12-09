@@ -43,7 +43,7 @@ canvas {
 /*mute button*/
 #muteButton {
   position: fixed;
-  bottom: 10px;
+  top: 10px;
   right: 10px;
 }
 
