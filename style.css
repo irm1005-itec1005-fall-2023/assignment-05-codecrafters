@@ -76,5 +76,6 @@ footer p{
 @media (min-width: 1024px) {
   #app {
     max-width: 60%;
+    font-size: 1.2rem;
   }
 }
