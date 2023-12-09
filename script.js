@@ -364,7 +364,8 @@ var DIRECTION = {
   
     // Init complete
     console.log("App successfully initialised");
-  
+    playBackgroundSound();
+
   
   //
   // Inits & Event Listeners
