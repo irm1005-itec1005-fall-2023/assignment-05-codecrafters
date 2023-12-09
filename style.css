@@ -10,7 +10,7 @@ body {
   padding: 0;
   background-color:#0D313A;
   box-sizing: border-box;
-  
+  overflow: hidden;
 }
 html {
   box-sizing: border-box;
@@ -44,7 +44,11 @@ footer {
   justify-content: space-between;
   align-items: center;
   background-color: #377771;
-
+  /*make it stick to the bottom*/
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 footer p{
