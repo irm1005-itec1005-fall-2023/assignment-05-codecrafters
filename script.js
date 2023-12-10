@@ -319,6 +319,22 @@ var DIRECTION = {
     },
   
     listen: function () {
+        // Add event listeners for mouse movements
+        document.addEventListener('mousemove', function (event) {
+            // Get the vertical position of the mouse
+            var mouseY = event.clientY - Pong.canvas.getBoundingClientRect().top;
+
+            // Move the player paddle based on the mouse position
+            Pong.player.y = mouseY - Pong.player.height / 2;
+
+            // Ensure the player paddle stays within the canvas bounds
+            if (Pong.player.y < 0) {
+                Pong.player.y = 0;
+            } else if (Pong.player.y > Pong.canvas.height - Pong.player.height) {
+                Pong.player.y = Pong.canvas.height - Pong.player.height;
+            }
+        });
+
         document.addEventListener('keydown', function (key) {
             // Handle the 'Press any key to begin' function and start the game.
             if (Pong.running === false) {
