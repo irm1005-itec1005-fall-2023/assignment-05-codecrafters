@@ -382,10 +382,9 @@ var DIRECTION = {
     console.log("App successfully initialised");
   
 
-  
+
   //
   // Inits & Event Listeners
   //
   //https://phaser.io
   
-  inititialise();
