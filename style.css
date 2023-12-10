@@ -40,13 +40,6 @@ canvas {
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
 }
 
-/*mute button*/
-#muteButton {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-}
-
 footer {
   display:flex;
   justify-content: space-between;
